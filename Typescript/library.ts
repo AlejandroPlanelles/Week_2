@@ -27,10 +27,11 @@ export class Library {
             return libstring
     }
     public getNumberOfBooks():number{
+            let numberOfBooks=""
             for (let i = 0; i<this.books.length; i++){
-                
+              numberOfBooks = this.books.length  
             }
-            return 
+            return numberOfBooks
     }
     public findByAuthor(author:string): Book[] {
             let sayAuthor: Book[]=[];

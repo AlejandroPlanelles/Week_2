@@ -23,8 +23,12 @@ export class Library {
     public setManager(manager:string):void{
         this.manager
     }
-    public toString(){
-
+    public toString():string{
+        let librarytotal: string =""
+        for (let i=0; i < this.books.length; i++){
+            librarytotal = librarytotal + "Bookç"+ i + "\n" + this.books[i]
+        }
+        
     }
 }
 console.log(arrBooks)

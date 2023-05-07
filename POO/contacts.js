@@ -13,6 +13,6 @@ class Contacts{
     }
     }
     //objeto
-    module.exports = Contacts
-    let contacto = new Contacts()
+    module.exports = {Contacts}
+    
     

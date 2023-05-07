@@ -9,7 +9,7 @@ let nacho:Person = new Person ("Nacho", 39, "Pozuelo")
 
 let amigos = [pepe,juan,ana,nacho]
 
-console.log(amigos)
+console.log(contactos.printCalendar())
 
 
 

@@ -14,7 +14,7 @@ public printName():string{
 public yearOfBirth(currentYear:number):number{
     return currentYear-this.age
 }
-public setAdress(adress:string):void{
+public setAdress(adress:string){
     this.adress
 }
 public getAdress():string{

@@ -21,7 +21,7 @@ edad(currentYear){
     return (currentYear - this.yearOfBirth)
 }
 printAll(){
-return `nombre - ${this.nombre},${"\n"}apellido - ${this.apellido},${"\n"}estatura - ${this.estatura},${"\n"}peso - ${this.peso},imc - ${this.imc},${"\n"}this.yearOfBirth - ${this.yearOfBirth},${"\n"}age - ${this.age};`
+return `nombre - ${this.nombre},${"\n"}apellido - ${this.apellido},${"\n"}estatura - ${this.estatura},${"\n"}peso - ${this.peso},imc - ${this.imc},${"\n"}year of birth - ${this.yearOfBirth},${"\n"}age - ${this.age};`
 
 }
 printhobbies(){
@@ -32,9 +32,4 @@ printhobbies(){
 }
 //objeto
 
-let miembro = new Person("juan","perez",80,190,2000,["correr","comer"])
-console.log(miembro)
-console.log(miembro.printhobbies())
-console.log(miembro.printAll())
 module.exports = {Person}
-

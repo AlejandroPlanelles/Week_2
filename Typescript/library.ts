@@ -27,7 +27,7 @@ export class Library {
             return libstring
     }
     public getNumberOfBooks():number{
-            let numberOfBooks=""
+            let numberOfBooks= 0
             for (let i = 0; i<this.books.length; i++){
               numberOfBooks = this.books.length  
             }

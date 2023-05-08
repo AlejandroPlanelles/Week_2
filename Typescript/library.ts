@@ -19,7 +19,7 @@ export class Library {
     public setManager(newmanager:string):void{
         this.manager=newmanager
     }
-    public toString1():string{
+    public toString():string{
         let libBooks = ""
         for (let i= 0; i<this.books.length; i++){
         libBooks = libBooks + "book" + i +":\n" + this.books[i].toString()
@@ -27,12 +27,10 @@ export class Library {
         return libBooks
     }
     public getNumberOfBooks():number{
-        let numBooks=0
-        for (let i = 0; i<this.books.length; i++){
-          numBooks = this.books.length
+        return this.books.length
         }
-        return numBooks
-    }
+        
+    
     public findByAutor(autor:string): Book[] {
         let getAuthor: Book[]=[];
         for (let i =0; i < this.books.length; i++){

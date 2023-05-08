@@ -14,11 +14,11 @@ export class Vector{
 
 ////////////metodos
 public print(){
-        return this.elements
+        console.log(this.elements)
 }
     
 
-public add(v1:Vector){
+public add(v1:Vector):Vector{
     let result= new Vector(this.elements.length,0)
     for(let i=0; i<this.elements.length;i++){
         result.elements[i]=this.elements[i]+v1.elements[i]
@@ -28,7 +28,7 @@ public add(v1:Vector){
 
 
 
-public subs(v1:Vector){
+public subs(v1:Vector):Vector{
     let result= new Vector(this.elements.length,0)
     for(let i=0; i<this.elements.length;i++){
         result.elements[i]=this.elements[i]-v1.elements[i]
@@ -37,10 +37,10 @@ public subs(v1:Vector){
 }
 
 
-public multy(v1:Vector){
+public multy(v1:Vector):Vector{
     let result= new Vector(this.elements.length,0)
     for(let i=0; i<this.elements.length;i++){
-        result.elements[i]=this.elements[i]*v1.elements[i]
+        result.elements[i]=this.elements[i]*v1[i]
     }
     return result
 }

@@ -2,7 +2,7 @@ import { Person } from "./person";
 let persona:Person = new Person ("Pepe",30,"Mayor")
 export class Contacts{
 
-    public people:object[];
+    public people:Person[];
     //constructor
     constructor(){
 
@@ -12,7 +12,7 @@ export class Contacts{
     //metodos
 public printCalendar(){
         
-        return this.people
+        console.log(this.people)
     }
 }
 

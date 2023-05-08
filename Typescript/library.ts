@@ -2,7 +2,7 @@ import { Book } from "./book";
 
 export class Library {
     //constructor
-    constructor(private books:Array<any>, private adress:string, private manager:string){
+    constructor(private books:Book[], private adress:string, private manager:string){
 
     }
 
@@ -13,16 +13,16 @@ export class Library {
     public getManager(){
         return this.manager
     }
-    public setAdress(adress:string):void{
-        this.adress
+    public setAdress(newadress:string):void{
+        this.adress=newadress
     }
-    public setManager(manager:string):void{
-        this.manager
+    public setManager(newmanager:string):void{
+        this.manager=newmanager
     }
     public toString():string{
         let libBooks = ""
         for (let i= 0; i<this.books.length; i++){
-        libBooks = libBooks + "book" + i +":\n" + this.books[i]
+        libBooks = libBooks + "book" + i +":\n" + this.books[i].toString()
         }
         return libBooks
     }

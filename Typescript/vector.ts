@@ -19,32 +19,37 @@ public print(){
     
 
 public add(v1:Vector){
-    let sum = []
-        for(let i=0;i<this.elements.length;i++){
-            sum=v1[i]+this.elements[i];
-        }
-        return sum
-        
+    let result= new Vector(this.elements.length,0)
+    for(let i=0; i<this.elements.length;i++){
+        result.elements[i]=this.elements[i]+v1.elements[i]
+    }
+    return result
 }
-// public subs(v1:Vector){
-//     let res = []
-//     for(let i=0;i<this.elements.length;i++){
-//         res=this.elements[i]-v1[i]
-//     }
-//     return res
-// }
-// public mult(v1:Vector){
-//     let mult = []
-//     for(let i=0;i<this.elements.length;i++){
-//         mult=this.elements[i]*v1[i]
-//     }
-//     return mult
-// }
-// public multNumber(n:number){
-//     let prod = []
-//     for (let i=0;i<this.elements.length;i++){
-//         prod = this.elements[i]*n
-//     }
-//     return prod
-// }
+
+
+
+public subs(v1:Vector){
+    let result= new Vector(this.elements.length,0)
+    for(let i=0; i<this.elements.length;i++){
+        result.elements[i]=this.elements[i]-v1.elements[i]
+    }
+    return result
+}
+
+
+public multy(v1:Vector){
+    let result= new Vector(this.elements.length,0)
+    for(let i=0; i<this.elements.length;i++){
+        result.elements[i]=this.elements[i]*v1.elements[i]
+    }
+    return result
+}
+
+public multNumber(n:number):Vector{
+    let result=new Vector(this.elements.length,0)
+    for(let i=0; i<this.elements.length;i++){
+        result.elements[i]=this.elements[i]*n
+    }
+    return result
+}
 }

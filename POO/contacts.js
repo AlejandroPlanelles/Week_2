@@ -9,7 +9,7 @@ class Contacts{
     //metodo
 
     printPersons(){
-        return this.arrPerson
+       console.log(this.arrPerson)
     }
     }
     //objeto

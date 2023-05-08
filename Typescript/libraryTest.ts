@@ -8,5 +8,5 @@ let books3:Book = new Book("Cancion de hielo y fuego", 1000, "55446622-GM75663",
 let libOfBooks = [books0,books1,books2,books3]
 let LibraryShop:Library = new Library(libOfBooks, "churruca", "Diego Dalvateo");
 
-console.log(LibraryShop.findByAuthor)
+console.log(LibraryShop.toString())
 

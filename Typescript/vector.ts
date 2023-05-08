@@ -1,9 +1,9 @@
 export class Vector{
     ////// constructor
 
-    private elements:Array<number>
+    private elements:number[]
 
-    constructor ( n:number, k:number){
+    constructor (n:number, k:number){
         
         this.elements = []
         for(let i=0;i<n;i++){

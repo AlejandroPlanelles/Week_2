@@ -19,7 +19,7 @@ export class Library {
     public setManager(newmanager:string):void{
         this.manager=newmanager
     }
-    public toString():string{
+    public toString1():string{
         let libBooks = ""
         for (let i= 0; i<this.books.length; i++){
         libBooks = libBooks + "book" + i +":\n" + this.books[i].toString()
